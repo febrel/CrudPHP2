@@ -25,7 +25,6 @@
 				$foto_db = mysqli_fetch_array($resultado_seleccionar);
 				$ruta_foto_db = "../MySqli/images/" . $foto_db['foto'];
 
-				//mio
 				//Si existe varibale fotografia
             if (isset($foto_db["foto"])) {
                 //Verifica que existe en la carptea imagenes
@@ -34,14 +33,8 @@
                 }
         }
 
-				//Si existe la elimina
-				if ($resultado_seleccionar !="imagen.png") {
-					unlink($ruta_foto_db);
-				}
 
-
-
-		echo $sentencia="UPDATE productos SET id_producto='".$id."', nombre='".$nom."', descripcion='".$descrip."', foto='".$nombreArchivo."' WHERE no='".$no."' ";
+		$sentencia="UPDATE productos SET id_producto='".$id."', nombre='".$nom."', descripcion='".$descrip."', foto='".$nombreArchivo."' WHERE no='".$no."' ";
 		$conexion->query($sentencia) or die ("Error al actualizar datos".mysqli_error($conexion));
 	}
 ?>
