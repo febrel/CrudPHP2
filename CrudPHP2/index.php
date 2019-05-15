@@ -11,7 +11,7 @@
 
   <br>
     <div id="main-container">
-    <a href="nuevo_prod1.php"> <button type="button" class="btnNuevo">Nuevo</button> </a>
+    <a href="nuevo_prod1.php"> <button type="button" class="btnNuevo">Nuevo</button> </a> 
   	    <table id="customers">
   		      <thead>
               <tr>

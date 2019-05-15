@@ -69,6 +69,7 @@ body{
   transition-duration: 0.4s;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 4px;/*Para espacio*/ 
 
 }
 
