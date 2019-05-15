@@ -15,12 +15,8 @@
 <body>
 
 
-  	<img src="images/swirl.jpg">
-
-
+	<h3 class="titulo">Nuevo Servicio</h3> 
   	<div id="main-container">
-  		<h3>Nuevo Servicio</h3> 
-  		<br>
 	  	<form action="nuevo_prod2.php" method="POST" enctype="multipart/form-data"">
   		
 		<label>Id Producto</label>
@@ -46,8 +42,6 @@
 
 
   <br>
-
-  		<img src="images/swirl.jpg" id="img2">
 
 
 <script >

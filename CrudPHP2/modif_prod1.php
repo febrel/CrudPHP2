@@ -30,14 +30,8 @@
 </head>
 <body>
 
-
-  	<img src="images/swirl.jpg">
-
-
+  <h3 class="titulo">Modificar Servicios</h3> 
   <div id="main-container">
-  
-  		 <h3>Modificar Producto</h3> 
-  	<br>
 	  <form action="modif_prod2.php" enctype="multipart/form-data" method="POST>
       <input type="hidden" name="no"  value="<?php echo $_GET['no']?>">
 
@@ -62,10 +56,6 @@
   	</div>
 
     <br>
-
-
-
-  		<img src="images/swirl.jpg" id="img2">
 
 
 

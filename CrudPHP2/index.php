@@ -9,14 +9,13 @@
 </head>
 <body>
 
-<img src="images/swirl.jpg">
   <br>
     <div id="main-container">
     <a href="nuevo_prod1.php"> <button type="button" class="btnNuevo">Nuevo</button> </a>
   	    <table id="customers">
   		      <thead>
               <tr>
-  			        <th>No.</th>
+  			        <th>No</th>
   			        <th>ID</th>
   			        <th>Producto</th>
   			        <th>Descripcion</th>
@@ -48,10 +47,6 @@
     </div>
         
         <br>
-
-	<div id="footer">
-  		<img src="images/swirl.jpg">
-  </div>
 
 </body>
 </html>
