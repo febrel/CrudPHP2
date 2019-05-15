@@ -16,39 +16,39 @@
    ];
   }
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modificar Producto</title>
-<style type="text/css">
-@import url("css/mycss.css");
-</style>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="ckeditor/ckeditor.js"></script>
+<title>Modificar Servicio</title>
+
 </head>
 <body>
-<div class="todo">
 
-  <div id="cabecera">
-  	<img src="images/swirl.png" width="1188" id="img1">
-  </div>
 
-  <div id="contenido">
-  	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Modificar Producto</h1> </span>
-  		<br>
-	  <form action="modif_prod2.php" enctype="multipart/form-data" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+  	<img src="images/swirl.jpg">
+
+
+  <div id="main-container">
+  
+  		 <h3>Modificar Producto</h3> 
+  	<br>
+	  <form action="modif_prod2.php" enctype="multipart/form-data" method="POST>
       <input type="hidden" name="no"  value="<?php echo $_GET['no']?>">
 
       <label>Id Producto: </label>
-  		<input type="text" id="id_producto" name="id_producto"  value="<?php echo $consulta[0] ?>"><br>
+  		<input type="text" id="id_producto" name="id_producto" placeholder="Id Producto"  value="<?php echo $consulta[0] ?>"><br>
 
   		<label>Producto: </label>
-  		<input type="text" id="producto" name="producto" value="<?php echo $consulta[1] ?>" ><br>
+  		<input type="text" id="producto" name="producto" placeholder="Producto" value="<?php echo $consulta[1] ?>" ><br>
 
   		<label>Descripcion: </label>
-			<textarea style="border-radius: 10px;" rows="3" cols="50" name="descripcion"> <?php echo $consulta[2] ?>  </textarea><br>
+			<textarea id="descripcion" style="border-radius: 10px;" rows="3" cols="50" name="descripcion"> <?php echo $consulta[2] ?>  </textarea><br>
 
 		<label for="">Foto:</label>
 
@@ -57,17 +57,22 @@
 
 
   		<br>
-  		<button type="submit" class="btn btn-success">Guardar</button>
+      <input type="submit" value="Modificar">
      </form>
   	</div>
 
-  </div>
+    <br>
 
-	<div id="footer">
-  		<img src="images/swirl2.png" id="img2">
-  	</div>
 
-</div>
+
+  		<img src="images/swirl.jpg" id="img2">
+
+
+
+<script >
+
+	CKEDITOR.replace('descripcion');
+</script>
 
 
 </body>

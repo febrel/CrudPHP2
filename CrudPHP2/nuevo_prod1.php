@@ -7,50 +7,53 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alta de Producto</title>
-<style type="text/css">
-@import url("css/mycss.css");
-</style>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/estilos.css">
+<title>Nuevos Servicios</title>
+<script src="ckeditor/ckeditor.js"></script>
+
 </head>
 <body>
-<div class="todo">
 
-  <div id="cabecera">
-  	<img src="images/swirl.png" width="1188" id="img1">
-  </div>
 
-  <div id="contenido">
-  	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Alta de Nuevo Producto</h1> </span>
+  	<img src="images/swirl.jpg">
+
+
+  	<div id="main-container">
+  		<h3>Nuevo Servicio</h3> 
   		<br>
-	  <form action="nuevo_prod2.php" method="POST" enctype="multipart/form-data" style="border-collapse: separate; border-spacing: 10px 5px;">
-  		<label>Id Producto: </label>
-  		<input type="text" id="id_producto" name="id_producto"><br>
+	  	<form action="nuevo_prod2.php" method="POST" enctype="multipart/form-data"">
+  		
+		<label>Id Producto</label>
+  		<input type="text" id="id_producto" name="id_producto" placeholder="Id Producto"><br>
 
   		<label>Producto: </label>
-  		<input type="text" id="producto" name="producto" ><br>
+  		<input type="text" id="producto" name="producto"  placeholder="Producto"><br>
 
   		<label>Descripcion: </label>
-		<textarea style="border-radius: 10px;" rows="3" cols="50" name="descripcion" ></textarea><br>
+		<textarea  id="descripcion" style="border-radius: 10px;" rows="3" cols="50" name="descripcion" ></textarea><br>
 
 		<label for="">Foto:</label>
 
 		<input type="file" class="form-control" accept="image/*" name="foto" id="foto">
 
+		<br>
 
-  		<br>
-  		<button type="submit" class="btn btn-success">Guardar</button>
+  		<input type="submit" value="Guardar">
+
      </form>
+
   	</div>
 
-  </div>
 
-	<div id="footer">
-  		<img src="images/swirl2.png" id="img2">
-  	</div>
+  <br>
 
-</div>
+  		<img src="images/swirl.jpg" id="img2">
+
+
+<script >
+
+	CKEDITOR.replace('descripcion');
+</script>
 
 
 </body>

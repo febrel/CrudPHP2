@@ -1,4 +1,6 @@
 <?php
+
+    
 	NuevoProducto($_POST['id_producto'], $_POST['producto'], $_POST['descripcion'], $_FILES['foto']["name"]);
 
 	function NuevoProducto($id, $nom, $descrip, $foto){

@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejemplo de interaccion con DB</title>
-<style type="text/css">
-@import url("css/mycss.css");
-</style>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/estilos.css">
 
+<title>Servicios</title>
 </head>
 <body>
-<div class="todo">
 
-  <div id="cabecera">
-  	<img src="images/swirl.png" width="1188" id="img1">
-  </div>
-
-  <div id="contenido">
-  	<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<thead>
-  			<th>No.</th>
-  			<th>ID</th>
-  			<th>Producto</th>
-  			<th>Descripcion</th>
-        <th>Foto</th>
-  			<th> <a href="nuevo_prod1.php"> <button type="button" class="btn btn-info">Nuevo</button> </a> </th>
-  		</thead>
+<img src="images/swirl.jpg">
+  <br>
+    <div id="main-container">
+    <a href="nuevo_prod1.php"> <button type="button" class="btnNuevo">Nuevo</button> </a>
+  	    <table id="customers">
+  		      <thead>
+              <tr>
+  			        <th>No.</th>
+  			        <th>ID</th>
+  			        <th>Producto</th>
+  			        <th>Descripcion</th>
+                <th>Foto</th>
+                <th>Accion 1</th>
+                <th>Accion 2</th>
+            </tr>
+  		        </thead>
 
       <?php
         include "conexion.php";
@@ -41,23 +39,19 @@
             echo "<td>"; echo $fila['descripcion']; echo "</td>";
             $direccion = $fila['foto'];
             echo "<td><img src='../MySqli/images/". $direccion ."' border='0' width='200' height='100' /></td>";
-            echo "<td><a href='modif_prod1.php?no=".$fila['no']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
-            echo " <td><a href='eliminar_prod.php?no=".$fila['no']."'> <button type='button' class='btn btn-danger'>Eliminar</button> </a></td>";
+            echo "<td><a href='modif_prod1.php?no=".$fila['no']."'> <button type='button' class='btnModificar'>Modificar</button> </a></td>";
+            echo " <td><a href='eliminar_prod.php?no=".$fila['no']."'> <button type='button' class='btnEliminar'>Eliminar</button> </a></td>";
           echo "</tr>";
         }
       ?>
-
-
-
-  	</table>
-  </div>
+  	  </table>
+    </div>
+        
+        <br>
 
 	<div id="footer">
-  		<img src="images/swirl2.png" id="img2">
-  	</div>
-
-</div>
-
+  		<img src="images/swirl.jpg">
+  </div>
 
 </body>
 </html>
