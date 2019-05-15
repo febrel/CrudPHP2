@@ -17,7 +17,7 @@
 
 	<h3 class="titulo">Nuevo Servicio</h3> 
   	<div id="main-container">
-	  	<form action="nuevo_prod2.php" method="POST" enctype="multipart/form-data"">
+	  	<form action="nuevo_prod2.php" method="POST" enctype="multipart/form-data">
   		
 		<label>Id Producto</label>
   		<input type="text" id="id_producto" name="id_producto" placeholder="Id Producto"><br>

@@ -39,12 +39,6 @@
 						$conexion->query($sentencia) or die ("Error al actualizar datos".mysqli_error($conexion));
         }
 
-
-
-
-
-
-
 	}
 ?>
 

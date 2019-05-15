@@ -17,7 +17,6 @@
   }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +31,7 @@
 
   <h3 class="titulo">Modificar Servicios</h3> 
   <div id="main-container">
-	  <form action="modif_prod2.php" enctype="multipart/form-data" method="POST>
+	  <form action="modif_prod2.php" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="no"  value="<?php echo $_GET['no']?>">
 
       <label>Id Producto: </label>
